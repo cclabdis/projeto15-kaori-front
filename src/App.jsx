@@ -5,7 +5,9 @@ import LoginPage from "./Pages/Login/Login.jsx";
 import { AuthProvider } from "./contexts/authContext.jsx";
 import SignUp from "./Pages/SignUp/SignUp.jsx";
 
+
 function App() {
+
   return (
     <div className="App">
       <ResetStyles />
