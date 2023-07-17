@@ -2,6 +2,7 @@ import axios from "axios";
 import LoginForm from "./components/Form.jsx";
 import LoginInput from "./components/Input.jsx";
 import LoginButton from "./components/Button.jsx";
+import Wrapper from "./components/Fieldset.jsx";
 import { useNavigate } from "react-router-dom";
 import Motd from "./components/MOTD.jsx";
 import { useState } from "react";
@@ -23,6 +24,8 @@ const LoginPage = () => {
   }
 
   return (
+    <Wrapper>
+      <legend>Login</legend>
     <LoginForm onSubmit={handleSubmit}>
       <LoginInput
         body={body}
@@ -50,6 +53,7 @@ const LoginPage = () => {
         content={"Não possui cadastro? Cadastre-se!"}
       ></Motd>
     </LoginForm>
+    </Wrapper>
   );
 };
 

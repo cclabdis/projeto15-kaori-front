@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import SignUpButton from "./components/Button.jsx";
 import SignUpInput from "./components/Input.jsx";
 import SignUpForm from "./components/Form.jsx";
+import Wrapper from "./components/Fieldset.jsx";
 import Motd from "./components/MOTD.jsx";
 import axios from "axios";
 import { useRef, useState } from "react";
@@ -37,6 +38,8 @@ const SignUp = () => {
   }
 
   return (
+    <Wrapper>
+      <legend>Sign Up</legend>
     <SignUpForm submitFunction={signup}>
       <SignUpInput
         body={body}
@@ -82,6 +85,7 @@ const SignUp = () => {
         content={"Já possui cadastro? Logue!"}
       ></Motd>
     </SignUpForm>
+    </Wrapper>
   );
 };
 

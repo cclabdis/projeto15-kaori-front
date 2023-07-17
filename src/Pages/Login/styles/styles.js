@@ -24,7 +24,6 @@ export const Button = styled.button`
 `;
 
 export const Form = styled.form`
-  margin-top: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +31,23 @@ export const Form = styled.form`
   width: 400px;
   max-width: 100vw;
   gap: 10px;
+`;
+
+export const Fieldset = styled.fieldset`
+  margin-top: 25vh;
+  display: flex;
+  border: solid 2px #000;
+  border-radius: 10px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  max-width: 100vw;
+
+  legend {
+    font-size: 30px;
+  }
 `;
 
 export const MotdButton = styled.p`
